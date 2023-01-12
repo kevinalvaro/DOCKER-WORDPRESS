@@ -4,6 +4,8 @@ services:
     # default port 9000 (FastCGI)
     image: wordpress
     container_name: wp-wordpress
+    ports:
+      - "80:80"
     env_file:
       - secret.env
     volumes:

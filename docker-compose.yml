@@ -6,6 +6,7 @@ services:
     container_name: wp-wordpress
     ports:
       - "80:80"
+    restart: always
     env_file:
       - secret.env
     volumes:
